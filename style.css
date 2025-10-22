@@ -1,0 +1,113 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #f6fbff, #fbfff6);
+    color: #0A1931;
+    line-height: 1.6;
+}
+
+/* Containers */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header */
+header.header {
+    background-color: #0A1931;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header.header h1 {
+    font-size: 2.5rem;
+    color: #00BFFF;
+}
+
+header.header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Sections */
+section {
+    background: #fff;
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(10,25,49,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(10,25,49,0.12);
+}
+
+section h2 {
+    color: #0A1931;
+    margin-bottom: 15px;
+    border-left: 6px solid #00BFFF;
+    padding-left: 10px;
+}
+
+section p, section li {
+    font-size: 1.05rem;
+}
+
+/* Lista de serviços */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    background: #E8F4FF;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+ul li:hover {
+    background: #dbeeff;
+}
+
+/* Links */
+a {
+    color: #FF7A00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #0A1931;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header.header h1 {
+        font-size: 2rem;
+    }
+    section {
+        padding: 20px;
+    }
+}
